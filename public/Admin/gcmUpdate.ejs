@@ -1,0 +1,88 @@
+<div ng-app="grievances" ng-controller="Admin_UPDATE_GCM">
+    <h4 class="modal-title">Update Grievance Cell Member</h4>
+    <hr>
+    <form class="form-horizontal" ng-submit="updategcm()">
+        <br>
+        
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-2">
+                    <label id="name
+                "> *Name:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input class="form-control" id="name" type="text" ng-model="newname" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-2">
+                    <label>*Designation:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input type="text" ng-model="newdesignation" class="form-control" required>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="form-group">
+            <div class="row">
+                <div class="col-xs-2">
+                    <label>Select Grievance Type:</label>
+                </div>
+                <div class="col-xs-6">
+                    <br>
+                    <small>*Use Ctrl(Windows)/Commang(Mac) button to select multiple.</small>
+                    <select class="form-control" ng-model="newGtype" multiple>
+
+                        <option ng-repeat="result in result" value="{{result.seq}}">{{result.grvtype}}</option>
+                    </select>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-2">
+                    <label>*Email:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input type="text" ng-model="newemailid" class="form-control" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-2">
+                    <label >*Contact No.:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input type="text" ng-model="newmobileno" class="form-control" maxlength="10" minlength="10" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-2">
+                    <label>Is Management ?  </label>
+                </div>
+                <div class="col-xs-6">
+                        <input type="checkbox" ng-model="newmngmnt">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-7 offset-sm-2">
+                    <button type="submit" class="btn btn-outline-primary" id="member-details">Update</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
